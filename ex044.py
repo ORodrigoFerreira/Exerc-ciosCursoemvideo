@@ -12,3 +12,4 @@ if pagamento == 'cartão':
         print('O valor pago será de R${}'.format(preco))
     else:
         print('O valor pago será de R${}'.format(1.2*preco))
+print('Como é bom receber um aumento')
