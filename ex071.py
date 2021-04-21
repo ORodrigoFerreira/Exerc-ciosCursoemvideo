@@ -1,9 +1,14 @@
-valor = int(input('Quanto irá sacar?'))
+print('-'*30)
+print('{:^30}'.format('Banco Rodrigo'))
+print('-'*30)
+
+valor = int(input('Quanto irá sacar?R$ '))
 nota = 50
 print('Você receberá:')
 while True:
     n = valor//nota
-    print(f' {n} notas de R${nota} ')
+    if n != 0:
+        print(f' {n} notas de R${nota} ')
     valor %= nota
     if nota == 50:
         nota = 20
